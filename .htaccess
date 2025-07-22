@@ -11,8 +11,8 @@ ErrorDocument 503 /html/errorpages/503.html
 ErrorDocument 504 /html/errorpages/504.html
 Options +Includes
 Options -Indexes
-AddType text/html .html .php
-AddOutputFilter INCLUDES .html .php
+AddType text/html .html .php .txt
+AddOutputFilter INCLUDES .html .php .txt
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options nosniff
 Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
