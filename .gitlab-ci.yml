@@ -4,8 +4,8 @@ deploy_job:
   stage: deploy
   script:
     - |
-      rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./ $webserver:$wwwpath/postnummer.xyz
+      rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./ $webserver:$wwwpath/api.postnummer.xyz
       ssh -i ~/.ssh/runner $webserver "
-        rm -f $wwwpath/postnummer.xyz/README.md
-        rm -f $wwwpath/postnummer.xyz/LICENSE
+        rm -f $wwwpath/api.postnummer.xyz/README.md
+        rm -f $wwwpath/api.postnummer.xyz/LICENSE
       "
