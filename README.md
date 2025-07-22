@@ -1,10 +1,5 @@
-# Template
+![postnummer logo](https://fms.helsingborgproductions.com/cdn/postnummer/logo.png)
 
-Template
+# api.postnummer.xyz
 
-**Clone the repository (ssh):**
-
-```bash
-git clone git@oregon01:global/template.git
-cd template
-```
+Back-end for postnummer.xyz
